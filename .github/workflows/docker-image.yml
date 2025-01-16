@@ -25,8 +25,8 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t your-dockerhub-username/flarie-todo:latest .
+        docker build -t mehedihub/flarie-todo:latest .
 
     - name: Push Docker image
       run: |
-        docker push your-dockerhub-username/flarie-todo:latest
+        docker push mehedihub/flarie-todo:latest
