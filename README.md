@@ -6,11 +6,11 @@ This repository contains a Node.js Todo application, which has been Dockerized a
 
 ## Steps to Deploy
 
-1. **Forked Repository**: You can find the repository [here](https://github.com/YOUR_USERNAME/flarie-todo).
-2. **Docker Image**: The Docker image for the application is publicly available on Docker Hub [here](https://hub.docker.com/repository/docker/YOUR_DOCKER_USERNAME/flarie-todo).
+1. **Forked Repository**: You can find the repository [here](https://github.com/mehediemon/flarie-todo).
+2. **Docker Image**: The Docker image for the application is publicly available on Docker Hub [here](https://hub.docker.com/repository/docker/mehedihub/flarie-todo).
 3. **CI Pipeline**: The CI pipeline automatically builds and pushes the Docker image on each push/merge to the `main` branch. It is set up using GitHub Actions.
 4. **Kubernetes Deployment**:
-   - You can deploy the application using the Kubernetes manifests `deployment.yaml` and `service.yaml`.
+   - You can deploy the application using the Kubernetes manifests `deployment.yaml` and `nodeport_service.yaml`.
    - The application is exposed via a `NodePort` on port `34567` on the cluster.
 
 ## Kubernetes Commands
@@ -18,7 +18,7 @@ This repository contains a Node.js Todo application, which has been Dockerized a
 - To deploy the application:
   ```bash
   kubectl apply -f deployment.yaml
-  kubectl apply -f service.yaml
+  kubectl apply -f nodeport_service.yaml
   ```
 
 - To check the status:
@@ -32,7 +32,7 @@ This repository contains a Node.js Todo application, which has been Dockerized a
 ## Links
 
 - **Forked GitHub Repository**: [YOUR_REPOSITORY_LINK]
-- **Docker Image**: [Docker Hub link]
+- **Docker Image**: [https://hub.docker.com/repository/docker/mehedihub/flarie-todo]
 
 ## Additional Information
 
