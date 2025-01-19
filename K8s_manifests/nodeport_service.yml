@@ -7,6 +7,6 @@ spec:
   ports:
     - port: 3000
       targetPort: 3000
-      nodePort: 34567
+      nodePort: 31567
   selector:
     app: flarie-todo
